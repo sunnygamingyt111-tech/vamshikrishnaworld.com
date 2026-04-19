@@ -1,54 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Vamshi World</title>
+    <title>Vamshi Gaming Hub</title>
 
     <style>
         body {
             margin: 0;
             font-family: Arial;
-            text-align: center;
-            background: linear-gradient(135deg, #000000, #0f2027);
+            background: black;
             color: white;
+            text-align: center;
         }
 
         h1 {
-            margin-top: 30px;
-            font-size: 28px;
-            text-shadow: 0 0 10px cyan;
-        }
-
-        .container {
             padding: 20px;
+            text-shadow: 0 0 15px cyan;
         }
 
         .card {
-            background: rgba(0,0,0,0.8);
-            border: 1px solid cyan;
-            border-radius: 15px;
             margin: 20px;
             padding: 20px;
+            border-radius: 15px;
+            background: #111;
             box-shadow: 0 0 15px cyan;
+            transition: 0.3s;
         }
 
-        .card h2 {
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px cyan;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
             margin-bottom: 10px;
         }
 
         .btn {
             display: inline-block;
             padding: 10px 20px;
-            color: black;
+            margin-top: 10px;
             background: cyan;
-            border-radius: 25px;
+            color: black;
+            border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
-            box-shadow: 0 0 10px cyan;
+        }
+
+        iframe {
+            margin-top: 15px;
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            border-radius: 10px;
         }
 
         .coming {
             color: gray;
-            font-style: italic;
         }
 
     </style>
@@ -58,27 +67,34 @@
 
 <h1>🎮 Vamshi Gaming Hub 🎮</h1>
 
-<div class="container">
+<div class="card">
+    <img src="https://via.placeholder.com/120" />
+    <h2>Vamshi Telugu Gaming</h2>
 
-    <div class="card">
-        <h2>Vamshi Telugu Gaming</h2>
-        <a class="btn" href="https://youtube.com/@vamshitelugugamingyt?si=R9zG0BDmRap5OuaB" target="_blank">
-            Visit Channel
-        </a>
-    </div>
+    <a class="btn" href="https://youtube.com/@vamshitelugugamingyt?si=R9zG0BDmRap5OuaB" target="_blank">
+        Visit Channel
+    </a>
 
-    <div class="card">
-        <h2>Sunny Gaming Yt</h2>
-        <a class="btn" href="https://youtube.com/@sunnygamingyt-w5e?si=ET-S9ACVaQhftBnd" target="_blank">
-            Visit Channel
-        </a>
-    </div>
+    <!-- YouTube Video -->
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=vamshitelugugamingyt"></iframe>
+</div>
 
-    <div class="card">
-        <h2>Vamshi Dev Studios</h2>
-        <p class="coming">🚧 Coming Soon 🚧</p>
-    </div>
+<div class="card">
+    <img src="https://via.placeholder.com/120" />
+    <h2>Sunny Gaming Yt</h2>
 
+    <a class="btn" href="https://youtube.com/@sunnygamingyt-w5e?si=ET-S9ACVaQhftBnd" target="_blank">
+        Visit Channel
+    </a>
+
+    <!-- YouTube Video -->
+    <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sunnygamingyt-w5e"></iframe>
+</div>
+
+<div class="card">
+    <img src="https://via.placeholder.com/120" />
+    <h2>Vamshi Dev Studios</h2>
+    <p class="coming">🚧 Coming Soon 🚧</p>
 </div>
 
 </body>
