@@ -1,44 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Channels</title>
+    <title>Vamshi World</title>
+
     <style>
         body {
+            margin: 0;
             font-family: Arial;
             text-align: center;
-            background: black;
+            background: linear-gradient(135deg, #000000, #0f2027);
             color: white;
         }
-        .box {
-            border: 1px solid white;
+
+        h1 {
+            margin-top: 30px;
+            font-size: 28px;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.8);
+            border: 1px solid cyan;
+            border-radius: 15px;
             margin: 20px;
             padding: 20px;
-            border-radius: 10px;
+            box-shadow: 0 0 15px cyan;
         }
-        a {
-            color: cyan;
-            font-size: 18px;
+
+        .card h2 {
+            margin-bottom: 10px;
         }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: black;
+            background: cyan;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 10px cyan;
+        }
+
+        .coming {
+            color: gray;
+            font-style: italic;
+        }
+
     </style>
 </head>
 
 <body>
 
-<h1>Welcome to My Website</h1>
+<h1>🎮 Vamshi Gaming Hub 🎮</h1>
 
-<div class="box">
-    <h2>Vamshi Telugu Gaming</h2>
-    <a href="#">Visit Channel</a>
-</div>
+<div class="container">
 
-<div class="box">
-    <h2>Sunny Gaming Yt</h2>
-    <a href="#">Visit Channel</a>
-</div>
+    <div class="card">
+        <h2>Vamshi Telugu Gaming</h2>
+        <a class="btn" href="https://youtube.com/@vamshitelugugamingyt?si=R9zG0BDmRap5OuaB" target="_blank">
+            Visit Channel
+        </a>
+    </div>
 
-<div class="box">
-    <h2>Vamshi Dev Studios</h2>
-    <a href="#">Visit Channel</a>
+    <div class="card">
+        <h2>Sunny Gaming Yt</h2>
+        <a class="btn" href="https://youtube.com/@sunnygamingyt-w5e?si=ET-S9ACVaQhftBnd" target="_blank">
+            Visit Channel
+        </a>
+    </div>
+
+    <div class="card">
+        <h2>Vamshi Dev Studios</h2>
+        <p class="coming">🚧 Coming Soon 🚧</p>
+    </div>
+
 </div>
 
 </body>
